@@ -1,30 +1,26 @@
-import './App.css'
-import styled from "styled-components";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Home from "./Pages/Home"
+import Navbar from "./Components/Navbar"
+import Login from "./Pages/Login"
+import Register from "./Pages/Register"
+import Product from "./Pages/Product"
 
 function App() {
 
   return (
-    <AppStyled className="App">
-
-    </AppStyled>
+    <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/product" element={<Product />} />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
-const AppStyled = styled.div`
-  height: 100vh;
-  background-image: url(${props => props.bg});
-  position: relative;
-  main{
-    flex: 1;
-    background: rgba(252, 246, 249, 0.78);
-    border: 3px solid #FFFFFF;
-    backdrop-filter: blur(4.5px);
-    border-radius: 32px;
-    overflow-x: hidden;
-    &::-webkit-scrollbar{
-      width: 0;
-    }
-  }
-`;
 
 export default App
