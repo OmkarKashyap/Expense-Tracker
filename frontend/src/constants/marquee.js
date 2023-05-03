@@ -1,0 +1,22 @@
+export const marquee = [
+    {
+        id:"1",
+        src:"Marquee1"
+    },
+    {
+        id:"2",
+        src:"Marquee2"
+    },
+    {
+        id:"3",
+        src:"Marquee3"
+    },
+    {
+        id:"4",
+        src:"Marquee4"
+    },
+    {
+        id:"5",
+        src:"Marquee5"
+    },
+]
