@@ -18,7 +18,7 @@ function Login() {
       const response = await Axios.post("http://localhost:5000/api/v1/login-user",{username,password})
       setCookies("access_token", response.data.token);
       window.localStorage.setItem("userID", response.data.userID);
-      navigate("/product")
+      navigate(`/user/dashboard`)
     }catch(error){
       console.error(error)
     }

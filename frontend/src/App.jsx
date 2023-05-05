@@ -6,6 +6,8 @@ import Register from "./Pages/Register"
 import Product from "./Pages/Product"
 import Payments from "./Pages/Payments"
 import About from "./Pages/About"
+import Footer from "./Components/Footer"
+import Dashboard from "./Pages/Dashboard/Dashboard"
 
 function App() {
 
@@ -20,7 +22,9 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/about" element={<About />} />
+          <Route path="/user/dashboard" element={<Dashboard />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   )

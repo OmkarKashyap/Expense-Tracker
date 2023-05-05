@@ -8,6 +8,9 @@ import Features from '../Components/Features'
 import TransactionsView from '../Components/TransactionsView'
 import ExpenseView from '../Components/ExpenseView'
 import TransactionRecord from '../Components/TransactionRecord'
+import Testimonials from '../Components/Testimonials'
+import FAQ from '../Components/FAQ'
+import Download from '../Components/Download'
 
 function Home() {
   return (
@@ -35,6 +38,8 @@ function Home() {
         <TransactionsView />
         <ExpenseView />
         <TransactionRecord />
+        <Testimonials />
+        <FAQ />
       </div>
     </div>
   )
