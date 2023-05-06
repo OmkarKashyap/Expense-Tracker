@@ -1,5 +1,3 @@
-/*
-
 import React, { useContext, useState } from "react"
 import Axios from 'axios'
 
@@ -45,7 +43,7 @@ export const GlobalProvider = ({children}) => {
     }
 
 
-    //calculate incomes
+    //calculate expenses
     const addExpense = async (income) => {
         const response = await Axios.post(`${BASE_URL}add-expense`, income)
             .catch((err) =>{
@@ -55,7 +53,7 @@ export const GlobalProvider = ({children}) => {
     }
 
     const getExpenses = async () => {
-        const response = await Axios.get(`${BASE_URL}get-expenses`)
+        const response = await Axios.get(`${BASE_URL}get-expense`)
         setExpenses(response.data)
         console.log(response.data)
     }
@@ -114,5 +112,3 @@ export const GlobalProvider = ({children}) => {
 export const useGlobalContext = () =>{
     return useContext(GlobalContext)
 }
-
-*/

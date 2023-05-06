@@ -21,6 +21,7 @@ function Navbar() {
             <ul className='flex items-center text-sm tracking-wide gap-x-8'>
                 <li className='py-1 duration-300 hover:scale-125'><a className="text-gray-300 cursor-pointer text-md hover:text-green-500"><Link to="/">Home</Link></a></li>
                 <li className='py-1 duration-300 hover:scale-125'><a className="text-gray-300 cursor-pointer text-md hover:text-green-500"><Link to="/product">Product</Link></a></li>
+                {cookies.access_token ? (<li className='py-1 duration-300 hover:scale-125'><a className="text-gray-300 cursor-pointer text-md hover:text-green-500"><Link to="/user/dashboard">Dashboard</Link></a></li>):(<div className='hidden'></div>)}
                 <li className='py-1 duration-300 hover:scale-125'><a className="text-gray-300 cursor-pointer text-md hover:text-green-500"><Link to="/payments">Payments</Link></a></li>
                 <li className='py-1 duration-300 hover:scale-125'><a className="text-gray-300 cursor-pointer text-md hover:text-green-500"><Link to="/about">About Us</Link></a></li>
             </ul>

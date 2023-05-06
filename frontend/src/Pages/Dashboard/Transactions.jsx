@@ -1,15 +1,14 @@
 import React from 'react'
 import Navigation from '../../Components/Dashboard/Navigation'
-import DashboardHome from '../../Components/Dashboard/DashboardHome'
+import TransactionComp from '../../Components/Dashboard/TransactionComp'
 
-function Dashboard() {
+function Transactions() {
   return (
     <div className='flex'>
         <Navigation />
-        <DashboardHome />
+        <TransactionComp />
     </div>
-
   )
 }
 
-export default Dashboard
+export default Transactions
