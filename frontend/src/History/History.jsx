@@ -8,7 +8,7 @@ function History() {
     const [...history] = transactionHistory()
 
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 bg-purple-400'>
             <h2>Recent History</h2>
             {history.map((item) =>{
                 const {_id, title, amount, type} = item

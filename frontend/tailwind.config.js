@@ -4,6 +4,9 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors:{
+        "dashboardPrimary" : "#1F2A40"
+      },
       fontFamily:{
         Poppins:"'Poppins',serif"
       },

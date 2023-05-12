@@ -1,4 +1,5 @@
 import React from 'react'
+import { useGlobalContext } from '../../context/globalContext';
 import {Chart as ChartJs, 
     CategoryScale,
     LinearScale,
@@ -11,8 +12,7 @@ import {Chart as ChartJs,
 } from 'chart.js'
 
 import {Line} from 'react-chartjs-2'
-//import { useGlobalContext } from '../../context/globalContext'
-//import { dateFormat } from '../../utils/dateFormat'
+import { dateFormat } from '../../utils/dateFormat' 
 
 ChartJs.register(
     CategoryScale,
@@ -60,8 +60,9 @@ function Chart() {
         ]
     }
 
+
   return (
-    <div className='bg-[#FCF6F9] border-2 p-4 rounded-lg h-[100%]'>
+    <div className='bg-gray-200 p-1 rounded-lg h-full'>
         <Line data={data} />
     </div>
   )
