@@ -1,3 +1,22 @@
+import AddBusinessIcon from '@mui/icons-material/AddBusiness';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
+import SavingsIcon from '@mui/icons-material/Savings';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import MoneyIcon from '@mui/icons-material/Money';
+import DeleteIcon from '@mui/icons-material/Delete';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import CommentIcon from '@mui/icons-material/Comment';
+import AddIcon from '@mui/icons-material/Add';
+import BookIcon from '@mui/icons-material/Book';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import TvIcon from '@mui/icons-material/Tv';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import CheckroomIcon from '@mui/icons-material/Checkroom';
+    
+
 export const dashboard = <i className="fa-solid fa-chart-line"></i>
 export const transactions = <i className="fa-solid fa-credit-card"></i>
 export const categories = <i className="fa-solid fa-tags"></i>
@@ -6,24 +25,24 @@ export const settings = <i className="fa-solid fa-cog"></i>
 export const logout = <i className="fa-solid fa-sign-out"></i>
 export const trend = <i className="fa-solid fa-money-bill-trend-up"></i>
 export const expenses = <i className="fa-solid fa-money-bill-transfer"></i>
-export const money = <i className="fa-solid fa-money-bill"></i>
-export const freelance = <i className ="fa-solid fa-earth-americas"></i>
-export const stocks = <i className="fa-solid fa-arrow-trend-up"></i>
-export const bitcoin = <i className="fa-brands fa-bitcoin"></i>
-export const piggy = <i className="fa-solid fa-piggy-bank"></i>
-export const yt = <i className="fa-brands fa-youtube"></i>
-export const card = <i className="fa-brands fa-cc-visa"></i>
-export const users = <i className="fa-solid fa-users-between-lines"></i>
+export const money = <MoneyIcon />
+export const freelance = <AddBusinessIcon />
+export const stocks = <ShowChartIcon />
+export const bitcoin = <CurrencyBitcoinIcon />
+export const piggy = <SavingsIcon />
+export const yt = <YouTubeIcon />
+export const card = <AccountBalanceIcon />
+export const users = <i className="fa-solid fa-dollar-sign"></i>
 export const dollar = <i className="fa-solid fa-dollar-sign"></i>
-export const calender = <i className="fa-solid fa-calendar"></i>
-export const comment = <i className="fa-solid fa-comment"></i>
-export const plus = <i className="fa-solid fa-plus"></i>
-export const trash = <i className="fa-solid fa-trash"></i>
+export const calender = <CalendarMonthIcon />
+export const comment = <CommentIcon />
+export const plus = <AddIcon />
+export const trash = <DeleteIcon />
 export const signout = <i className="fa-solid fa-right-from-bracket"></i>
-export const takeaway = <i className="fa-solid fa-utensils"></i>
-export const clothing = <i className="fa-solid fa-shirt"></i>
-export const book = <i className="fa-solid fa-book-open"></i>
-export const food = <i className="fa-solid fa-bowl-food"></i>
-export const medical = <i className="fa-solid fa-briefcase-medical"></i>
-export const tv = <i className="fa-solid fa-tv"></i>
+export const takeaway = <DeliveryDiningIcon />
+export const clothing = <CheckroomIcon />
+export const book = <BookIcon />
+export const food = <FastfoodIcon />
+export const medical = <MedicalServicesIcon />
+export const tv = <TvIcon />
 export const circle = <i className="fa-solid fa-circle-dot"></i>

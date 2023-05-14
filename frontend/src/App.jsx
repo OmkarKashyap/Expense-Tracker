@@ -11,6 +11,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard"
 import Transactions from "./Pages/Dashboard/Transactions"
 import Incomes from "./Pages/Dashboard/Incomes"
 import Expenses from "./Pages/Dashboard/Expenses"
+import Profile from "./Components/Profile"
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
           <Route path="/user/transactions" element={<Transactions />} />
           <Route path="/user/incomes" element={<Incomes />} />
           <Route path="/user/expenses" element={<Expenses />} />
+          <Route path="/profile" element={<Profile />} />
+
         </Routes>
         <Footer />
       </Router>

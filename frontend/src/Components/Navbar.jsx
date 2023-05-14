@@ -8,14 +8,28 @@ function Navbar() {
   const [profilePressed, setProfilePressed] = useState(false)
   const navigate = useNavigate()
 
+  //change colour onScroll
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if(window.scrollY >=90){
+      setColor(true)
+    }
+  }
+  window.addEventListener('scroll', changeColor)
+
   const logout = () => {
     setCookies("access_token", "");
     window.localStorage.removeItem("userID");
     navigate("/login")
   }
+
+  const profile = () => {
+    navigate("/profile")
+  }
+  
   
   return (
-    <nav className='fixed top-0 left-0 w-full pt-4 text-white font-Poppins'>
+    <nav className='fixed top-0 left-0 z-10 w-full pt-4 pb-4 text-white bg-gray-900 font-Poppins'>
         <div className='container flex justify-between mx-auto'>
             <Link to="/"><span className='text-3xl font-bold '> Fin.<span className="text-green-500">Man</span></span></Link>
             <ul className='flex items-center text-sm tracking-wide gap-x-8'>
@@ -39,7 +53,13 @@ function Navbar() {
                 </svg>
                 </button>
                 
-                {profilePressed ? (<button className="flex px-3 py-2 text-sm text-gray-200 border" onClick={logout}>Logout</button>):(<div></div>)}
+                {profilePressed ? (
+                  <div>
+                    <button className="flex px-3 py-2 text-sm text-gray-200 border" onClick={logout}>Logout</button>
+                    <button className="flex px-3 py-2 text-sm text-gray-200 border" onClick={profile}>Profile</button>
+                  </div>
+                    
+                    ):(<div></div>)}
                 
               </div>
             )}

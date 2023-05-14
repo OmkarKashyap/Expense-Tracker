@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import ExpenseViewHome from "../assets/ExpenseViewHome.jpg"
 function ExpenseView() {
   return (
     <div className='grid h-screen grid-cols-2 text-white bg-black'>
@@ -15,7 +15,7 @@ function ExpenseView() {
         </div>
 
         <div>
-            Image 2
+            <img src={ExpenseViewHome} className='object-contain p-20 rounded-full' />
         </div>
     </div>
   )

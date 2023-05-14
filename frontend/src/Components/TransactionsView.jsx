@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import TransactionsViewHome from "../assets/TransactionsViewHome.jpg"
 function TransactionsView() {
   return (
     <div className='grid h-screen grid-cols-2 text-white bg-black'>
         <div>
-            Image
+            <img src={TransactionsViewHome} className='object-contain p-20 rounded-full' />
         </div>
         <div>
             <div className='mt-48 ml-10 '>

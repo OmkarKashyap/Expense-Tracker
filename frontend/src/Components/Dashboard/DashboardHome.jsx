@@ -24,7 +24,7 @@ function DashboardHome() {
     const netCash = totalIncome()-totalExpenses()
     
   return (
-    <Box className='w-full pt-10 bg-gray-900'>
+    <Box className='w-full pt-16 bg-gray-900'>
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">

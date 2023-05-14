@@ -7,9 +7,8 @@ function Navigation() {
     <div>
         <div>
             <div className="absolute flex-col justify-between hidden w-64 h-full bg-gray-700 shadow sm:relative md:h-full sm:flex">
-                <div className="px-8">
+                <div className="px-8 mb-[435px]">
                     <div className="flex items-center w-full h-20">
-                        <div className='font-Poppins text-4xl font-semibold text-white'>Fin.<span className='text-green-500'>Man</span></div>
                     </div>
                     <ul className="mt-5">
                         <li className="flex items-center justify-between w-full mb-6 text-gray-200 cursor-pointer hover:text-gray-500">
@@ -88,16 +87,16 @@ function Navigation() {
                             </div>
                         </li>
                     </ul>
-                    <div className="flex justify-center w-full mt-40 mb-4">
+                    <div className="flex justify-center w-full mt-10">
                         <div className="relative ">
                             <div className="absolute inset-0 w-4 h-4 m-auto ml-4 text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" />
                                     <circle cx={10} cy={10} r={7} />
                                     <line x1={21} y1={21} x2={15} y2={15} />
                                 </svg>
                             </div>
-                            <input className="w-full py-2 pl-10 text-sm text-gray-500 bg-gray-100 bg-gray-700 rounded focus:outline-none" type="text" placeholder="Search" />
+                            <input className="w-full py-2 pl-10 text-sm text-white bg-gray-600 rounded rounded-full focus:outline-none" type="text" placeholder="Search" />
                         </div>
                     </div>
                 </div>
@@ -245,7 +244,7 @@ function Navigation() {
                                     <line x1={21} y1={21} x2={15} y2={15} />
                                 </svg>
                             </div>
-                            <input className="w-full py-2 pl-10 text-sm text-gray-500 bg-gray-100 bg-gray-700 rounded focus:outline-none" type="text" placeholder="Search" />
+                            <input className="w-full py-2 pl-10 text-sm text-gray-500 bg-gray-100 rounded focus:outline-none" type="text" placeholder="Search" />
                         </div>
                     </div>
                 </div>

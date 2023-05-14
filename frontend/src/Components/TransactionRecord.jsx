@@ -1,14 +1,14 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import InvoicesHome from "../assets/InvoiceHome.jpg"
 function TransactionRecord() {
   return (
     <div className='grid h-screen grid-cols-2 text-white bg-black'>
         <div>
-            Image 3
+            <img src={InvoicesHome} className='object-contain p-20 rounded-full' />
         </div>
         <div>
-            <div className='mt-48 ml-10 '>
+            <div className='mt-40 ml-10 '>
                 <div className='text-4xl font-semibold leading-relaxed text-white font-Popping'>Keep a track of your <br /> transaction <span className='text-green-500'>easily</span> with <br /> Fin.Man</div>
                 <div className='mt-6 mb-8 text-sm leading-6 text-gray-400 font-Poppins'>
                     With Fin.Man, you will be getting details of your weekly transactions <br /> in a detailed manner so that you can keep a record of your <br />money spent
